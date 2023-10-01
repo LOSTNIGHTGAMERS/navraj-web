@@ -1,0 +1,73 @@
+<html>
+<head>
+	<style>
+		button{
+			border-radius: 500 px;
+			font-size: 20px;
+
+		}
+		button:hover{
+			font-size: 30px;
+		}
+		input{
+			font-size: 20px;
+			border-radius: 500px;
+		}
+		div{
+			border: 2px solid black;
+			height: 200px;
+			width: 500px;
+		}
+	</style>
+	</head>
+	<body style="background-color: aqua;">
+	<center><div><table>
+		<tr>
+			<td colspan="2"><input type="text" id="a"></td>
+			<td><button onclick="cl( )">AC</button><td>
+			<td><button onclick="solve()">=</button></td>
+		</tr>
+		<tr>
+		<td><button onclick="display(1)">1</button></td>
+			<td><button onclick="display(2)">2</button></td>
+			<td><button onclick="display(3)">3</button></td>
+			<td><button onclick="display('+')">+</button></td>
+		</tr>
+		<tr>
+		<td><button onclick="display(4)">4</button></td>
+			<td><button onclick="display(5)">5</button></td>
+			<td><button onclick="display(6)">6</button></td>
+			<td><button onclick="display('-')">-</button></td>
+		</tr>
+		<tr>
+		<td><button onclick="display(7)">7</button></td>
+			<td><button onclick="display(8)">8</button></td>
+			<td><button onclick="display(9)">9</button></td>
+			<td><button onclick="display('*')">*</button></td>
+		</tr>
+		<tr>
+		<td><button onclick="display(0)">0</button></td>
+			<td><button onclick="display(00)">00</button></td>
+			<td><button onclick="display('.')">.</button></td>
+			<td><button onclick="display('/')">/</button></td>
+		</tr>
+		</table></div></center>
+		<script>
+			function display(num)
+			{
+				document.getElementById('a').value+=num;
+	
+			}
+			function solve()
+			{
+             var a=document.getElementById('a').value;
+				var b=eval(a);
+				document.getElementById('a').value=b;
+			}
+			function cl( )
+			{
+				document.getElementById('a').value="  ";
+			}
+		</script>
+	</body>
+</html>

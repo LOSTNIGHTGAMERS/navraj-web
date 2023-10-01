@@ -1,0 +1,15 @@
+div{
+	border: 1px solid black;
+	height: 500px;
+	width: 500px;
+	
+}
+p{
+	color: aquamarine;
+	font-size: 20px;
+}
+input{
+	height: 100px;
+	width: 100px;
+	color: red;
+}

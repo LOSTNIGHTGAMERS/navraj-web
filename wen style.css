@@ -1,0 +1,33 @@
+
+
+.centerdiv{
+    width: 300px;
+
+}
+.ld{
+    color: azure;
+    text-decoration: none;
+
+}
+.ld:hover{
+    color: cadetblue;
+}
+.links{
+    border: 1px solid aqua;
+    width: 200px;	
+   
+    margin-top: -300px;
+}
+.des{
+    color: aliceblue;
+}
+
+.adgestment{
+    height: 700px;
+    width: 100%;
+}
+.top{
+	height: 800px;
+	width: 500px;
+	border: 70px solid black;
+}

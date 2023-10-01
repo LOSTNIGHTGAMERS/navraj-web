@@ -1,0 +1,47 @@
+<html>
+<head>
+	
+	<style>
+	
+	</style>
+	</head>
+	<body>
+	<center><h1>ARRAY</h1></center>
+		<p id="demo"></p>
+		<p id="cemo"></p>
+		<p id="lemo"></p>
+		<script>
+		var cars=["saab","volvo","bmw"];
+			document.getElementById("demo").innerHTML=cars;
+			document.write("<br>");
+			const fruits=["apple","orange","grapes"];
+			let length=fruits.length;
+
+			document.getElementById("cemo").innerHTML=length;
+			document.write("<br>");
+			fruits.push("lemon");
+			document.write(fruits);
+			document.write("<br>");
+			document.getElementById("lemo").innerHTML=fruits.join("*");
+			document.write("<br>");
+var NameMeta=["NAVRAJ","YUVRAJ","NAVNEeT"];
+			NameMeta.pop();
+			document.write(NameMeta);
+			document.write("<br>");
+			var india=["ram","sham","guMnam"];
+			india.shift();
+			document.write("<br>");
+			fruits.unshift("yellow fruit");
+			document.write(fruits);
+			document.write("<br>");
+			var myboy=["navraj","yuvraj"];
+			var myGirl=["navneet","gurleen"];
+			var myadult=myboy.concat(myGirl);
+			document.write(myadult);
+document.write("<br>");
+			fruits.sort();
+			fruits.reverse;
+			document.write(fruits);
+		</script>
+	</body>
+</html>

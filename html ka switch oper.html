@@ -1,0 +1,44 @@
+<html>
+<head>
+	<style>
+		body{
+			background-color: aqua;
+		}
+		h1{
+			border: 2px solid black;
+			border-style: dashed;
+		}	
+	</style>
+	</head>
+	<body>
+		<center><h1>SASTA CALCULATOR BY NAVRAJ</h1></center>
+	<script>
+		var num1=parseInt(prompt("enter num1")),num2=parseInt(prompt("enter num2")),oper=prompt("enter oper"),result;
+		switch(oper){
+			case '+':result=num1+num2;
+				document.write(result);
+				break;
+							case '-':result=num1+num2;
+				document.write(result);
+				break;
+							case '*':result=num1+num2;
+				document.write(result);
+				break;
+							case '/':result=num1+num2;
+				document.write(result);
+				break;
+							case '%':result=num1+num2;
+				document.write(result);
+				break;
+		}
+				document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+		var table=parseInt(prompt("enter table")),a=1;
+		for(a=1;a<=10;a++){
+			document.write(a*table);
+			document.write("<br>");
+		}
+		</script>
+	</body>
+</html>

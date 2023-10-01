@@ -1,0 +1,42 @@
+<html>
+<head>
+	<style>
+		#clock{
+			font-size: 175px;
+			width: 900px;
+			margin: 200px;
+			text-align: center;
+			border: 6px solid orange;
+			border-radius: 25px;
+			height: 100px;         
+		}
+	</style>
+	</head>
+	<body>
+	<div id="clock"></div>
+		<script>
+		setInterval(showtime,1000);
+			function showtime()
+			{
+				var time=new Date();
+				var hour=time.getHours();
+				var min=time.getMinutes();
+				var sec=time.getSeconds();
+				am-pm="am";
+				if(hour>12)
+					{
+						hour-=12;
+						am-pm="pm";
+					}
+				if(hour==0)
+					{
+						hr=12;
+						am-pm="am";
+					}
+				var currenttime=hour+":"+min":"+sec+am-pm;
+				document.getElementById("clock").innerHTML=currenttime;
+			}
+			showtime;
+		</script>
+	</body>
+</html>
